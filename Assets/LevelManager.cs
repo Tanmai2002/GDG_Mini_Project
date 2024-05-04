@@ -19,7 +19,9 @@ public class LevelManager : MonoBehaviour
     private NodeScript currentSelection;
     private PrisonerScript currentPrisoner;
     public NodeScript rootNode;
-
+    
+    int totalIncorrectNodes=0;
+    int totalCorrectNodes=0;
     private void Awake()
     {
         levelManager = this;
@@ -44,6 +46,11 @@ public class LevelManager : MonoBehaviour
     }
     void SpawnPrisoner()
     {
+        if(prisonerNumbers.Count == 0) {
+            float accuracy= totalCorrectNodes/(totalCorrectNodes*1.0f+totalIncorrectNodes);
+            GameManager.Instance.onGameCompleted(accuracy);
+            return;
+        }
         GameObject Prisoner= Instantiate(PrisonerObject, PrisonerSpawnLocation.position, Quaternion.identity);
         Prisoner.GetComponent<PrisonerScript>().assignNumber( prisonerNumbers[0]);
         
@@ -79,6 +86,7 @@ public class LevelManager : MonoBehaviour
             currentSelection.updateColorAsCorrect();
             prison.assignPrisoner(currentPrisoner);
             //Run Prison Animation
+            totalCorrectNodes++;
 
             SpawnPrisoner();
 
@@ -88,6 +96,8 @@ public class LevelManager : MonoBehaviour
         else
         {
             currentSelection.updateColorAsWrong();
+            FindObjectOfType<LifeManager>().GetComponent<LifeManager>().lifeLost();
+            totalIncorrectNodes++;
             currentPrisoner.runAway();
 
         }

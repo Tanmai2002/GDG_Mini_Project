@@ -730,24 +730,40 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1937694945}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: max_level
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: PrisonerSpawnLocation
       value: 
       objectReference: {fileID: 2104528764}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[0]
-      value: 10
+      value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[1]
-      value: 20
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[2]
-      value: 5
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[3]
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[4]
+      value: 88
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[5]
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 9054060984006817792, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: m_Name
@@ -873,11 +889,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.size
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[0]
-      value: This is Prison
+      value: This is tougher Level. All the best
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[1]

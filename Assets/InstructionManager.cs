@@ -27,6 +27,7 @@ public class InstructionManager : MonoBehaviour
     {
         nextInstruction = true;
         isExecuting = false;
+
         
     }
 
@@ -35,6 +36,7 @@ public class InstructionManager : MonoBehaviour
     {
         if (!isExecuting && nextInstruction && Instructions.Count>0)
         {
+            print(Instructions.Count);
 
             if (hasExit) {
 
