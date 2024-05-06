@@ -612,10 +612,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1937694945}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
-      propertyPath: max_level
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: PrisonerSpawnLocation
       value: 
       objectReference: {fileID: 2104528764}
@@ -711,19 +707,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[0]
-      value: All the Best for Level
+      value: This is Prison
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[1]
-      value: You can click and Put Prisoner in Jail
+      value: This is Prisoner
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[2]
-      value: Try it Out!
+      value: You can click and Put Prisoner in Jail
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[3]

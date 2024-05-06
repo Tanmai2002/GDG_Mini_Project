@@ -120,12 +120,12 @@ public class InstructionManager : MonoBehaviour
         
     }
 
-    void addInstruction(string instruction)
+    public void addInstruction(string instruction)
     {
         Instructions.Add(instruction);
     }
 
-    void addInstructions(List<string> instructions)
+    public void addInstructions(List<string> instructions)
     {
         Instructions.AddRange(instructions);
     }   

@@ -12,7 +12,7 @@ public class PrisonerScript : MonoBehaviour
     public TextMesh Number;
 
     
-    NodeScript currentWaitingNode;
+    public NodeScript currentWaitingNode;
     Animator animator;
     Vector3 destination;
     float speed=10f;
@@ -56,6 +56,21 @@ public class PrisonerScript : MonoBehaviour
     }
 
 
+    public void prisonerToJailSimulationForRotation()
+    {
+        if (currentWaitingNode == null)
+        {
+            currentWaitingNode = LevelManager.levelManager.rootNode;
+        }
+        destination = currentWaitingNode.transform.position;
+
+        StartCoroutine(MoveToDestinationAndAnimateForRotation());
+
+
+    }
+
+
+
     IEnumerator MoveToDestinationAndAnimate()
     {
         // Move towards the destination
@@ -73,6 +88,25 @@ public class PrisonerScript : MonoBehaviour
 
         // Call another function after animation finishes
         CheckRunFunction();
+    }
+
+    IEnumerator MoveToDestinationAndAnimateForRotation()
+    {
+        // Move towards the destination
+        while (transform.position != destination)
+        {
+            yield return null;
+        }
+
+        // Prisoner has reached the destination (jail), play animation
+        PlayPrisonerAnimation();
+
+        // Wait for the animation to finish
+        yield return new WaitForSeconds(1f); // Adjust the time according to your animation's length
+        UpdateLeftRightAnimBool(false);
+
+        // Call another function after animation finishes
+        CheckRunFunctionForRotation();
     }
     void UpdateLeftRightAnimBool(bool value)
     {
@@ -100,6 +134,22 @@ public class PrisonerScript : MonoBehaviour
         else
         {
             LevelManager.levelManager.checkIfPrisonAssignedIsCorrect(currentWaitingNode);
+        }
+    }
+
+
+    void CheckRunFunctionForRotation()
+    {
+        if (currentWaitingNode.isPrisonOccupied())
+        {
+            NodeScript nextPrison = currentWaitingNode.getNextNode(this);
+            currentWaitingNode = nextPrison;
+            prisonerToJailSimulationForRotation();
+
+        }
+        else
+        {
+            currentWaitingNode.assignPrisoner(this);
         }
     }
 

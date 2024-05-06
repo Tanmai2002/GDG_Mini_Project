@@ -613,7 +613,7 @@ PrefabInstance:
       objectReference: {fileID: 1937694945}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: max_level
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: PrisonerSpawnLocation
@@ -621,19 +621,67 @@ PrefabInstance:
       objectReference: {fileID: 2104528764}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.size
-      value: 3
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[0]
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[1]
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[2]
-      value: 5
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[3]
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[4]
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[5]
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[6]
+      value: 87
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[7]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[8]
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[9]
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[10]
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[11]
+      value: 56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[12]
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[13]
+      value: 81
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[14]
+      value: 93
       objectReference: {fileID: 0}
     - target: {fileID: 9054060984006817792, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: m_Name
@@ -715,15 +763,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[0]
-      value: All the Best for Level
+      value: Tell About rotation
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[1]
-      value: You can click and Put Prisoner in Jail
+      value: This is Prisoner
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[2]
-      value: Try it Out!
+      value: You can click and Put Prisoner in Jail
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[3]

@@ -7,7 +7,9 @@ public class NavigationManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public static int HomeScreenIndex= 0;
+    public static int LevelSelecterIndex = 1;
     public static NavigationManager Instance; 
+
     private void Awake()
     {
        if(Instance == null)
@@ -34,7 +36,12 @@ public class NavigationManager : MonoBehaviour
     }
     public void NextLevel()
     {
-        int index= (SceneManager.GetActiveScene().buildIndex + 1) %(SceneManager.sceneCount);
+        int index= (SceneManager.GetActiveScene().buildIndex + 1) ;
         SceneManager.LoadScene(index);
+    }
+
+    public void LoadLevel(int index)
+    {
+        SceneManager.LoadScene(index+LevelSelecterIndex);
     }
 }
