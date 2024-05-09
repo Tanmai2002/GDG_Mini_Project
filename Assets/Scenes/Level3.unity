@@ -621,19 +621,27 @@ PrefabInstance:
       objectReference: {fileID: 2104528764}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[0]
-      value: 10
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[1]
-      value: 20
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[2]
-      value: 5
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[3]
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: prisonerNumbers.Array.data[4]
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9054060984006817792, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: m_Name
