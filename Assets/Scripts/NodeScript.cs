@@ -58,6 +58,13 @@ public class NodeScript : MonoBehaviour
     }
     public void cellSelectionWithRotation()
     {
+        if (!RotationValidatorAndManager.Instance.isBalanced())
+        {
+            InstructionManager.instructionManager.addInstruction("The Prisoners are not Balanced! Make sure you Balance it First");
+            FindObjectOfType<LifeManager>().GetComponent<LifeManager>().lifeLost();
+            
+            return;
+        }
 
         Debug.Log("Cell Selection With Rotation");
         LevelManager.levelManager.userSelectedPrison(this);
@@ -169,7 +176,6 @@ public class NodeScript : MonoBehaviour
             captured_prisoner.currentWaitingNode = parent;
             captured_prisoner.prisonerToJailSimulationForRotation();
             captured_prisoner = null;
-            yield return new WaitForSeconds(2);
             StartCoroutine(left.simulateAllChildPrisonerForLeftRotation(parent));
             StartCoroutine(right.simulateAllChildPrisonerForLeftRotation(parent));
         }
@@ -249,6 +255,13 @@ public class NodeScript : MonoBehaviour
 
 
         }
+
+    }
+
+    public bool isBalanced()
+    {
+        
+        return math.abs(left_weight - righth_weight) <= 1;
 
     }
 }

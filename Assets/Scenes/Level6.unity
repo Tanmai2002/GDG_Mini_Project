@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7086285}
+  - component: {fileID: 7086286}
   m_Layer: 0
   m_Name: TutorialManager
   m_TagString: Untagged
@@ -154,6 +155,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7086286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7086284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45613a60183268c49b117f764bb7f99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  list:
+  - The Top Most Prison is Not Balanced!
+  - UnBalanced Prisons are the Prisons where difference between Left value and Right
+    Value is more than 1
+  - Try Clicking the Left Rotate Button onto Prison to balance the Prison
 --- !u!114 &362563538 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4083297658337036254, guid: bf13ed81b5824d64c8fd6206e385f94b, type: 3}
@@ -763,19 +781,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[0]
-      value: Try it Out!
+      value: State Requries you to Manage a more complex Prison.
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[1]
-      value: This is Prisoner
+      value: You have aquired 2 ability. To move Prisoners left or right with help
+        of buttons below the Prison
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[2]
-      value: You can click and Put Prisoner in Jail
+      value: You are also provided the numbers besides the Prison that indicate Balance
+        of the Prison
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[3]

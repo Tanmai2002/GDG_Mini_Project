@@ -723,7 +723,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[0]
-      value: All the Best for Level
+      value: You have been Promoted to Manage a More bigger Prison. Let the Challenge
+        Begin!
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[1]

@@ -132,6 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7086285}
+  - component: {fileID: 7086286}
   m_Layer: 0
   m_Name: TutorialManager
   m_TagString: Untagged
@@ -154,6 +155,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7086286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7086284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45613a60183268c49b117f764bb7f99e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  list:
+  - The Top Most Prison is Not Balanced!
+  - Try Clicking the Right Rotate Button onto Prison to balance the Prison
 --- !u!114 &362563538 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4083297658337036254, guid: bf13ed81b5824d64c8fd6206e385f94b, type: 3}
@@ -617,7 +633,7 @@ PrefabInstance:
       objectReference: {fileID: 362563538}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: max_level
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: PrisonerSpawnLocation
@@ -625,7 +641,7 @@ PrefabInstance:
       objectReference: {fileID: 2104528764}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.size
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[0]
@@ -637,23 +653,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[2]
-      value: 75
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[3]
-      value: 12
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[4]
-      value: 37
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[5]
-      value: 62
+      value: 87
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[6]
-      value: 87
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[7]
@@ -763,15 +779,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[0]
-      value: Try it Out!
+      value: Lets Learn about Right Rotate
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[1]
-      value: This is Prisoner
+      value: Start by putting the Prisoners onto Prison
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[2]

@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 111471032}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1598193161}
+        m_TargetAssemblyTypeName: HomeScreenManager, Assembly-CSharp
+        m_MethodName: QuitApp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &111471032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,9 +1011,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1805156470}
-        m_TargetAssemblyTypeName: NavigationManager, Assembly-CSharp
-        m_MethodName: NextLevel
+      - m_Target: {fileID: 1598193161}
+        m_TargetAssemblyTypeName: HomeScreenManager, Assembly-CSharp
+        m_MethodName: GoToLevelSelect
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1061,6 +1073,7 @@ GameObject:
   - component: {fileID: 1598193159}
   - component: {fileID: 1598193158}
   - component: {fileID: 1598193157}
+  - component: {fileID: 1598193161}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1154,6 +1167,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1598193161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598193156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5cb2fe5816bd184f8bbd6d491d4de1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1696960855
 GameObject:
   m_ObjectHideFlags: 0
@@ -1402,17 +1427,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc18db4e5860c724cbb94e89cb51bedc, type: 3}
---- !u!114 &1805156470 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5121754699737794405, guid: dc18db4e5860c724cbb94e89cb51bedc, type: 3}
-  m_PrefabInstance: {fileID: 1805156469}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cbe91a3f70681049bdf5f6451aa473a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2104190239
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,6 +22,11 @@ public class LevelManager : MonoBehaviour
     
     int totalIncorrectNodes=0;
     int totalCorrectNodes=0;
+
+    public PrisonerScript getCurrentPrisoner()
+    {
+        return currentPrisoner;
+    }
     private void Awake()
     {
         levelManager = this;

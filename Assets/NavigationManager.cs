@@ -44,4 +44,10 @@ public class NavigationManager : MonoBehaviour
     {
         SceneManager.LoadScene(index+LevelSelecterIndex);
     }
+
+    
+    public void QuitApplication()
+    {
+        Application.Quit();
+    }
 }

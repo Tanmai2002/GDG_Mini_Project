@@ -612,12 +612,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1937694945}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
+      propertyPath: max_level
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: PrisonerSpawnLocation
       value: 
       objectReference: {fileID: 2104528764}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[0]
@@ -707,23 +711,47 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[0]
-      value: This is Prison
+      value: Hello Folks! Welcome to the Prison! You are the Prison Guard for this
+        Prison.
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[1]
-      value: This is Prisoner
+      value: Your Job is to align the Prisoners onto correct cell and avoid them
+        from running away.
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[2]
-      value: You can click and Put Prisoner in Jail
+      value: The one you see on the Right is the Prisoner. The Box in center is a
+        Prison
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[3]
-      value: Try it Out!
+      value: You as the Prison Guard aims to stop them from running and capturing
+        every Prisoner
+      objectReference: {fileID: 0}
+    - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
+      propertyPath: Instructions.Array.data[4]
+      value: You decide where the Guard will stand by clicking on a Box. Try Out!
+      objectReference: {fileID: 0}
+    - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
+      propertyPath: Instructions.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
+      propertyPath: Instructions.Array.data[6]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
+      propertyPath: Instructions.Array.data[7]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
+      propertyPath: Instructions.Array.data[8]
+      value: The First Prisoner Occupies the Top most Prison.
       objectReference: {fileID: 0}
     - target: {fileID: 1777730983565200200, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: m_AnchoredPosition.y

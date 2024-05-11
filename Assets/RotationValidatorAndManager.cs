@@ -24,6 +24,11 @@ public class RotationValidatorAndManager : MonoBehaviour
         
     }
 
+    public bool isBalanced()
+    {
+        return root.isBalanced();
+    }
+
     public void UpdateRoationWeitghts()
     {
         Debug.Log("Updating Rotation Weights"); 

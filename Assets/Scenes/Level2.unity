@@ -613,7 +613,7 @@ PrefabInstance:
       objectReference: {fileID: 1937694945}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: max_level
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: PrisonerSpawnLocation
@@ -621,7 +621,7 @@ PrefabInstance:
       objectReference: {fileID: 2104528764}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.size
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8117640729483489815, guid: c9eed904f0f5c8e4baab8abe2939578f, type: 3}
       propertyPath: prisonerNumbers.Array.data[0]
@@ -719,23 +719,26 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[0]
-      value: All the Best for Level
+      value: Prisoners here are very lazy to remember their prison. So they occupy
+        the first prison that they encounter.
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[1]
-      value: This is Prisoner
+      value: The First Prisoner occupies topmost Prison.
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[2]
-      value: You can click and Put Prisoner in Jail
+      value: 'Then Next Prisoner will start from top asking each prisoner untill
+        they find empty prison. '
       objectReference: {fileID: 0}
     - target: {fileID: 934454571664123194, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: Instructions.Array.data[3]
-      value: Try it Out!
+      value: Prisoner move left if he has lower number than captured Prisoner. Prisoner
+        move right if he has Higher Number
       objectReference: {fileID: 0}
     - target: {fileID: 1777730983565200200, guid: 5dd41d6e03d2dc045a2b765426414cfd, type: 3}
       propertyPath: m_AnchoredPosition.y
